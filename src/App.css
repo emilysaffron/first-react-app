@@ -7,10 +7,17 @@
   pointer-events: none;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+
+  div .stopped-logo{
+    animation-play-state: paused;
+  }
+
+  
 }
 
 .App-header {
@@ -36,3 +43,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+button {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-transform: uppercase;
+  box-shadow: 8px 1px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.unused {
+  background-color: red;
+}
+
+.used {
+  background-color: green;
+}
+
+
